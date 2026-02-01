@@ -1,125 +1,123 @@
-/* PAGE BACKGROUND */
-body.page {
-  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-  font-size: 12pt;
-  margin: 0;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Reynaldo Moros Ramos</title>
+  <link href="./styles/styles.css" rel="stylesheet" />
+</head>
 
-  background-image: url("../images/background.jpg");
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
+<body class="page">
+  <div class="container">
+    <h1 class="title">Reynaldo Moros Ramos</h1>
 
-/* CENTERED PAPER */
-.paper {
-  max-width: 900px;
-  margin: 30px auto;
-  padding: 25px 30px;
+    <div class="intro-row">
+      <p class="intro">
+        Hi! This is my "About Me" page for Web Programming. I'm a Computer Science student at Utah Valley University,
+        and I'm learning how to build websites using HTML and CSS.
+      </p>
 
-  background-color: rgba(255, 255, 255, 0.92);
-  border: 1px solid rgba(0,0,0,0.15);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
-}
+      <!-- FIX: image file is in the repo root as "reynaldo.jpg" -->
+      <img
+        src="reynaldo.jpg"
+        class="portrait"
+        alt="Photo of Reynaldo Moros Ramos"
+        title="Photo of Reynaldo Moros Ramos"
+      />
+    </div>
 
-/* NAME */
-.name {
-  font-size: 30pt;
-  font-weight: 700;
-  margin: 0 0 15px 0;
+    <h2 class="section-title">Personal Info</h2>
+    <ul class="info-list">
+      <li>Major: Computer Science</li>
+      <li>High School: Cristo Rey de Santa Monica (Year: 2009)</li>
+      <li>Current year at UVU: Sophomore</li>
+      <li>Favorite ice cream: Chocolate</li>
+    </ul>
 
-  padding: 10px 12px;
-  border-bottom: 3px solid rgba(0,0,0,0.25);
-}
+    <h2 class="section-title">My five favorite books</h2>
+    <ol class="book-list">
+      <li><em>The Lord of the Rings</em>, J. R. R. Tolkien</li>
+      <li><em>Harry Potter and the Sorcerer’s Stone</em>, J. K. Rowling</li>
+      <li><em>The Chronicles of Narnia</em>, C. S. Lewis</li>
+      <li><em>A Wizard of Earthsea</em>, Ursula K. Le Guin</li>
+      <li><em>One Hundred Years of Solitude</em>, Gabriel García Márquez</li>
+    </ol>
 
-/* PARAGRAPHS */
-p {
-  margin: 0 0 12px 0;
-  line-height: 1.5;
-}
+    <h2 class="section-title">Roads and Late Nights</h2>
+    <p class="paragraph">
+      I wrote this short piece about balancing work, school, and family while still finding small moments to enjoy life.
+    </p>
+    <p class="paragraph">
+      Late shifts, quiet roads, homework waits beside warm lights. Dreams keep moving on.
+    </p>
 
-/* PHOTO RIGHT WITH TEXT WRAP */
-.portrait {
-  width: 260px;
-  height: auto;
-  float: right;
+    <h2 class="section-title">My personal interests</h2>
+    <p class="paragraph">
+      I enjoy programming because it feels like solving puzzles that can actually help people. I like learning how different
+      parts of a computer work together, and I especially like building small projects and seeing them run. When something
+      finally works after debugging, it’s a great feeling.
+    </p>
+    <p class="paragraph">
+      Another interest of mine is motorcycles. I like the focus and responsibility that comes with riding, and I also enjoy
+      learning about maintenance and safety. Riding clears my head and gives me a break from screens and stress, especially
+      after long work shifts or a heavy week of classes.
+    </p>
+    <p class="paragraph">
+      I also love spending time with my family and playing video games when I have free time. Family keeps me grounded and
+      motivates me to keep improving myself. Games are fun, but they also remind me how creativity and technology can work
+      together to build amazing experiences.
+    </p>
 
-  margin: 10px 0 15px 20px;
-  padding: 6px;
+    <h2 class="section-title">Class Schedule</h2>
 
-  background: white;
-  border: 1px solid rgba(0,0,0,0.25);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.30);
-}
+    <table class="schedule">
+      <thead>
+        <tr>
+          <th class="time-col">Time</th>
+          <th class="day-col">Monday</th>
+          <th class="day-col">Tuesday</th>
+          <th class="day-col">Wednesday</th>
+          <th class="day-col">Thursday</th>
+          <th class="day-col">Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="time">9:00</td>
+          <td class="math">MATH 1050</td>
+          <td class="cs">CS 2420</td>
+          <td class="math">MATH 1050</td>
+          <td class="cs">CS 2420</td>
+          <td class="math">MATH 1050</td>
+        </tr>
+        <tr>
+          <td class="time">10:30</td>
+          <td class="span">SPAN 3050</td>
+          <td class="commute">Commute</td>
+          <td class="span">SPAN 3050</td>
+          <td class="commute">Commute</td>
+          <td class="span">SPAN 3050</td>
+        </tr>
+        <tr>
+          <td class="time">1:00</td>
+          <td class="cs">CS 2370</td>
+          <td class="study">Study</td>
+          <td class="cs">CS 2370</td>
+          <td class="study">Study</td>
+          <td class="cs">CS 2370</td>
+        </tr>
+        <tr>
+          <td class="time">4:30</td>
+          <td class="work">Work</td>
+          <td class="work">Work</td>
+          <td class="work">Work</td>
+          <td class="work">Work</td>
+          <td class="work">Work</td>
+        </tr>
+      </tbody>
+    </table>
 
-/* HEADINGS */
-.section-title, h2 {
-  font-size: 18pt;
-  margin-top: 22px;
-  margin-bottom: 8px;
-  padding-bottom: 4px;
-
-  border-bottom: 2px solid rgba(0,0,0,0.15);
-}
-
-/* LISTS */
-ul, ol {
-  margin-top: 0;
-  margin-bottom: 18px;
-}
-
-/* SCHEDULE TABLE */
-.schedule {
-  width: 100%;
-  table-layout: fixed;
-  border-collapse: collapse;
-  border-spacing: 0;
-
-  margin-top: 10px;
-  border: 2px solid rgba(0,0,0,0.35);
-}
-
-.schedule th,
-.schedule td {
-  padding: 8px 6px;
-  text-align: center;
-  vertical-align: middle;
-  border: 1px solid rgba(0,0,0,0.20);
-  font-size: 11pt;
-}
-
-/* TABLE HEADER */
-.schedule th {
-  background: rgba(30, 30, 30, 0.90);
-  color: white;
-  font-weight: 700;
-}
-
-/* STRIPED ROWS (extra credit style) */
-.schedule tr:nth-child(even) td {
-  background-color: rgba(0,0,0,0.03);
-}
-
-/* CLASS COLORS (each item has its own background color) */
-.math {
-  background-color: rgba(180, 220, 255, 0.85);
-  border-color: rgba(120, 170, 220, 0.90);
-  border-style: solid;
-}
-
-.cs {
-  background-color: rgba(190, 240, 205, 0.85);
-  border-color: rgba(120, 190, 145, 0.90);
-  border-style: solid;
-}
-
-.spanish {
-  background-color: rgba(255, 235, 170, 0.85);
-  border-color: rgba(215, 180, 85, 0.90);
-  border-style: solid;
-}
-
-/* CLEAR FLOATS AFTER IMAGE */
-.paper::after {
-  content: "";
-  display: block;
-  clear: both;
-}
+    <p class="uvu-id">UVU ID: 11023681</p>
+  </div>
+</body>
+</html>
