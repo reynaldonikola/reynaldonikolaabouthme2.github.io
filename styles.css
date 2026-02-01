@@ -1,0 +1,195 @@
+/* styles/styles.css */
+
+/* ---------- Body (font, margins, background image) ---------- */
+.page{
+  /* readable font, NOT Times */
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  font-size: 12pt;
+  line-height: 1.4;
+
+  /* a little bigger than default 15px looks nicer */
+  margin: 0;
+
+  /* background image + fixed like the professor example */
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-position: top left;
+}
+
+/* If you don't have images/background.jpg, either add one OR change the line above to:
+   background-color: #efe7dd;
+*/
+
+/* ---------- Centered “paper” container (extra credit floating div look) ---------- */
+.container{
+  width: 820px;
+  margin: 40px auto;
+  background: #ffffff;
+  padding: 28px 34px;
+  border: 1px solid #d8d8d8;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.18);
+}
+
+/* ---------- Your name (big, eye-catching) ---------- */
+.title{
+  font-size: 30pt;
+  font-weight: 800;
+  margin: 0 0 16px 0;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #cfcfcf;
+}
+
+/* ---------- Intro row + portrait layout ---------- */
+.intro-row{
+  /* text will wrap around the floated portrait */
+}
+
+.portrait{
+  float: right;
+  width: 260px;
+  height: auto;
+
+  /* clean photo framing like the sample */
+  padding: 8px;
+  background: #ffffff;
+  border: 1px solid #cfcfcf;
+  box-shadow: 0 10px 18px rgba(0,0,0,0.20);
+
+  margin: 0 0 14px 18px; /* space between text and photo */
+}
+
+/* optional hover enlarge (extra credit without JS) */
+.portrait{
+  transition: transform 0.25s ease-in-out;
+}
+.portrait:hover{
+  transform: scale(1.06);
+}
+
+/* ---------- Paragraph spacing + first-line indent ---------- */
+.paragraph,
+.intro{
+  margin: 0 0 10px 0;
+  text-indent: 0.75em;
+}
+
+/* ---------- Section headings (margins per spec) ---------- */
+.section-title{
+  font-size: 16pt;
+
+  /* upper margin about 75% of heading font size */
+  margin-top: 12pt;
+
+  /* lower margin about 20% of heading font size */
+  margin-bottom: 3pt;
+
+  padding-bottom: 6px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+/* ---------- Lists ---------- */
+.info-list,
+.book-list{
+  margin: 8px 0 12px 22px;
+  padding: 0;
+}
+
+.book-list li{
+  margin-bottom: 4px;
+}
+
+/* ---------- Table schedule (fixed layout, equal columns) ---------- */
+.schedule{
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  margin-top: 10px;
+  border: 2px solid #3b3b3b;
+}
+
+.time-col{
+  width: 90px;
+}
+
+.day-col{
+  width: 146px; /* equal day columns */
+}
+
+/* Header styling */
+.schedule th{
+  text-align: left;
+  padding: 10px 10px;
+  background: #2f2f2f;
+  color: #ffffff;
+  font-weight: 700;
+  border-right: 1px solid #1e1e1e;
+}
+
+.schedule th:last-child{
+  border-right: 0;
+}
+
+/* Body cells */
+.schedule td{
+  padding: 10px 10px;
+  border-right: 1px solid #cfcfcf;
+  border-top: 1px solid #cfcfcf;
+  vertical-align: top;
+  font-size: 11pt;
+}
+
+.schedule td:last-child{
+  border-right: 0;
+}
+
+.time{
+  font-weight: 700;
+  background: #f4f4f4;
+}
+
+/* ---------- Color blocks for schedule items (each item its own color) ---------- */
+.math{
+  background-color: #dbeafe;
+  border: 1px solid #b6d4fe;
+}
+
+.cs{
+  background-color: #dcfce7;
+  border: 1px solid #b7f0c7;
+}
+
+.span{
+  background-color: #fef3c7;
+  border: 1px solid #f5d38c;
+}
+
+.study{
+  background-color: #ede9fe;
+  border: 1px solid #cfc6fb;
+}
+
+.commute{
+  background-color: #e5e7eb;
+  border: 1px solid #c9cdd4;
+}
+
+.work{
+  background-color: #fee2e2;
+  border: 1px solid #f7b4b4;
+}
+
+/* ---------- UVU ID line ---------- */
+.uvu-id{
+  margin-top: 14px;
+  font-weight: 700;
+}
+
+/* ---------- Clear floats so the container wraps correctly ---------- */
+.container::after{
+  content: "";
+  display: block;
+  clear: both;
+}
