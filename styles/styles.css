@@ -1,0 +1,125 @@
+/* PAGE BACKGROUND */
+body.page {
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  font-size: 12pt;
+  margin: 0;
+
+  background-image: url("../images/background.jpg");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+/* CENTERED PAPER */
+.paper {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 25px 30px;
+
+  background-color: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0,0,0,0.15);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* NAME */
+.name {
+  font-size: 30pt;
+  font-weight: 700;
+  margin: 0 0 15px 0;
+
+  padding: 10px 12px;
+  border-bottom: 3px solid rgba(0,0,0,0.25);
+}
+
+/* PARAGRAPHS */
+p {
+  margin: 0 0 12px 0;
+  line-height: 1.5;
+}
+
+/* PHOTO RIGHT WITH TEXT WRAP */
+.portrait {
+  width: 260px;
+  height: auto;
+  float: right;
+
+  margin: 10px 0 15px 20px;
+  padding: 6px;
+
+  background: white;
+  border: 1px solid rgba(0,0,0,0.25);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.30);
+}
+
+/* HEADINGS */
+.section-title, h2 {
+  font-size: 18pt;
+  margin-top: 22px;
+  margin-bottom: 8px;
+  padding-bottom: 4px;
+
+  border-bottom: 2px solid rgba(0,0,0,0.15);
+}
+
+/* LISTS */
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+/* SCHEDULE TABLE */
+.schedule {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  margin-top: 10px;
+  border: 2px solid rgba(0,0,0,0.35);
+}
+
+.schedule th,
+.schedule td {
+  padding: 8px 6px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid rgba(0,0,0,0.20);
+  font-size: 11pt;
+}
+
+/* TABLE HEADER */
+.schedule th {
+  background: rgba(30, 30, 30, 0.90);
+  color: white;
+  font-weight: 700;
+}
+
+/* STRIPED ROWS (extra credit style) */
+.schedule tr:nth-child(even) td {
+  background-color: rgba(0,0,0,0.03);
+}
+
+/* CLASS COLORS (each item has its own background color) */
+.math {
+  background-color: rgba(180, 220, 255, 0.85);
+  border-color: rgba(120, 170, 220, 0.90);
+  border-style: solid;
+}
+
+.cs {
+  background-color: rgba(190, 240, 205, 0.85);
+  border-color: rgba(120, 190, 145, 0.90);
+  border-style: solid;
+}
+
+.spanish {
+  background-color: rgba(255, 235, 170, 0.85);
+  border-color: rgba(215, 180, 85, 0.90);
+  border-style: solid;
+}
+
+/* CLEAR FLOATS AFTER IMAGE */
+.paper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
